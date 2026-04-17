@@ -18,7 +18,7 @@
     "email": "tanvir.hasan@yahoo.com",
     "days_since_contact": 10,
     "status": "almost due",
-    "tags": ["school", "football"],
+    "tags": ["school" ],
     "bio": "My school friend and regular football teammate. We still meet occasionally for weekend matches.",
     "goal": 12,
     "next_due_date": "2026-04-19"
@@ -30,7 +30,7 @@
     "email": "nusrat.jahan@outlook.com",
     "days_since_contact": 5,
     "status": "on-track",
-    "tags": ["colleague", "design"],
+    "tags": ["colleague"],
     "bio": "Works with me on UI/UX projects. Very creative and always shares helpful design resources.",
     "goal": 10,
     "next_due_date": "2026-04-25"
@@ -54,7 +54,7 @@
     "email": "farhana.sultana@gmail.com",
     "days_since_contact": 13,
     "status": "almost due",
-    "tags": ["family friend", "events"],
+    "tags": ["family friend"],
     "bio": "Family friend who helps organize social events and gatherings. Always energetic and positive.",
     "goal": 14,
     "next_due_date": "2026-04-18"
@@ -94,5 +94,29 @@
     "bio": "Co-founder of a small startup. We often discuss business ideas and new tech trends.",
     "goal": 14,
     "next_due_date": "2026-04-24"
+  },
+  {
+    "id": 9,
+    "name": "Saminul Haque",
+    "picture": "https://randomuser.me/api/portraits/men/22.jpg",
+    "email": "saminul.haque@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["programming"],
+    "bio": "College friend from programming club. We used to build small apps and compete in coding contests together.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 10,
+    "name": "Meherun Nisa",
+    "picture": "https://randomuser.me/api/portraits/women/33.jpg",
+    "email": "meherun.nisa@gmail.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": ["workshop", "art"],
+    "bio": "Met at a creative workshop. She is passionate about digital illustration and often shares her artwork online.",
+    "goal": 10,
+    "next_due_date": "2026-04-23"
   }
 ]
