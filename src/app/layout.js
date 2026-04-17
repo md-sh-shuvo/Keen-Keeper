@@ -1,8 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/Navbar/Navbar";
-import { getUser } from "./user";
-import { UserProvider } from "./user-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,9 +18,7 @@ export const metadata = {
 };
 
 
-
 export default function RootLayout({ children }) {
-  let userPromise = getUser()
   return (
     <html
       lang="en"
@@ -30,8 +26,7 @@ export default function RootLayout({ children }) {
     >
       <body className={`min-h-full flex flex-col ${geistSans.className}`}>
         <Navbar></Navbar>  
-        <UserProvider userPromise={userPromise}>{children}</UserProvider>
-        
+        {children}
         
       </body>
     </html>
