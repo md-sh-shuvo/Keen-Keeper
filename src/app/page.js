@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-[#F8FAFC] font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 dark:bg-black sm:items-start">
-          
+    <div className="flex flex-col flex-1 items-center justify-center bg-[#F8FAFC] font-sans ">
+      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 sm:items-start">
+        <h1 className="text-3xl text-black text-center">Browse Friends <Link href='/home' className="underline text-blue-500">here</Link></h1>
       </main>
     </div>
   );

@@ -11,9 +11,9 @@ const FriendsContainer = () => {
 
                 {
                     friendsData.map((friend, idx) =>
-                        <div key={idx} className="cursor-pointer">
+                        <div key={idx} className="cursor-pointer mb-4 md:mb-0">
                             <Link href={`/home/friendDetails/${friend.id}`}>
-                                <div className="bg-white rounded-lg shadow-lg p-8">
+                                <div className="bg-white rounded-lg shadow-lg p-4">
                                     <Image src={`${friend.picture}`} width='80' height='80' alt="" className="rounded-full mx-auto"></Image>
                                     <h1 className="text-[#1F2937] text-xl font-semibold">{friend.name}</h1>
                                     <p className="text-[#64748B] text-[12px]">{friend.days_since_contact}d ago</p>

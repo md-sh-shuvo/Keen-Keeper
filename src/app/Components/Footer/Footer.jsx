@@ -10,8 +10,8 @@ const Footer = () => {
         <div className='bg-[#244D3F]'>
             <div className='max-w-[70%] mx-auto mt-20 text-center border-b border-gray-500 '>
                 <div>
-                    <h1 className='font-bold text-7xl text-white mb-4'>KeenKeeper</h1>
-                    <p className='text-[16px]'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
+                    <h1 className='font-bold text-xl md:text-4xl lg:text-7xl text-white mb-4'>KeenKeeper</h1>
+                    <p className='text-sm md:text-[16px]'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                     <div className='mt-6 mb-10'>
                         <h1 className='font-medium'>Social Links</h1>
                         <div className='flex gap-3 items-center justify-center mt-4'>
@@ -25,10 +25,10 @@ const Footer = () => {
                 </div>
                 <div></div>
             </div>
-            <div className='max-w-[70%] mx-auto my-6 flex justify-between text-[16px]'>
+            <div className='max-w-[70%] mx-auto my-6 md:flex justify-between text-[12px] md:text-[16px] text-center md:text-start'>
                 <div>© 2026 KeenKeeper. All rights reserved.</div>
                 <div>
-                    <ul className='flex gap-3'>
+                    <ul className='flex justify-center items-center gap-3'>
                         <li><Link href='/'>Privacy Policy</Link></li>
                         <li><Link href='/'>Terms of Sevice</Link></li>
                         <li><Link href='/'>Cookies</Link></li>

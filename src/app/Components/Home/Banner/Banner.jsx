@@ -4,8 +4,8 @@ import SummaryCard from "./SummaryCard";
 const Banner = () => {
     return (
         <div className="text-center">
-            <h1 className="font-bold text-5xl text-[#1F2937]">Friends to keep close in your life</h1>
-            <p className="text-[#64748B] mt-4 mb-8 w-[30%] mx-auto">Your personal shelf of meaningful connections. Browse, tend, and nurture the
+            <h1 className="font-bold text-xl md:text-3xl lg:text-5xl text-[#1F2937]">Friends to keep close in your life</h1>
+            <p className="text-[#64748B] px-[4%] md:px-0 text-sm md:text-lg mt-4 mb-8 md:w-[60%] lg:w-[40%] mx-auto">Your personal shelf of meaningful connections. Browse, tend, and nurture the
                 relationships that matter most.</p>
             <button className="py-3 px-4 bg-[#244D3F] rounded-sm font-semibold text-white flex mx-auto gap-1 cursor-pointer">
                 <span>
