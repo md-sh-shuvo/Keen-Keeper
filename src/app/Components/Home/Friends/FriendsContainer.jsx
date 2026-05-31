@@ -5,7 +5,7 @@ import friendsData from '@/data/friends.json'
 const FriendsContainer = () => {
     console.log(friendsData)
     return (
-        <div className="max-w-[70%] mx-auto mt-10 pt-10 border-t-2 border-[#E9E9E9] text-center">
+        <div className="max-w-[90%] lg:max-w-[70%] mx-auto mt-10 pt-10 border-t-2 border-[#E9E9E9] text-center">
             <h1 className="font-semibold text-2xl text-[#1F2937] mb-4 text-start">Your Friends</h1>
             <div className="md:grid grid-cols-2 lg:grid-cols-4 gap-6">
 
