@@ -2,6 +2,7 @@
 
 import { TimeLineContext } from '@/app/TimelineProvider';
 import React, { useContext, useState } from 'react';
+import { toast } from 'react-toastify';
 
 const CheckIn = ({friend}) => {
 
@@ -17,6 +18,7 @@ const CheckIn = ({friend}) => {
             friend
         }
         setTimelineArray(prev => [...prev, newTimelineCard])
+        toast.success('Timeline added successfully')
     }
 
 
