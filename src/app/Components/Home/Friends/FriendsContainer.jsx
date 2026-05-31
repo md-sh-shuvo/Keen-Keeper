@@ -1,12 +1,32 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
-import friendsData from '@/data/friends.json'
+// import friendsData from '@/data/friends.json'
+import { useEffect, useState } from "react";
 
 const FriendsContainer = () => {
-    console.log(friendsData)
+    const [friendsData, setFriendsData] = useState([])
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+        fetch('/friends.json')
+            .then(res => res.json())
+            .then(data => {
+                setFriendsData(data)
+                setLoading(false)
+            })
+    }, []);
+
+    // console.log(friendsData)
+
+
     return (
         <div className="max-w-[90%] lg:max-w-[70%] mx-auto mt-10 pt-10 border-t-2 border-[#E9E9E9] text-center">
+
             <h1 className="font-semibold text-2xl text-[#1F2937] mb-4 text-start">Your Friends</h1>
+
+            <span className={`loading loading-dots loading-xl text-black ${loading? 'block' : 'hidden'} mx-auto`}></span>
             <div className="md:grid grid-cols-2 lg:grid-cols-4 gap-6">
 
                 {
